@@ -19,6 +19,6 @@ $$u(x, y) = (1 - \cos(2 \pi x)) \sin(2 \pi y), \\
 v(x, y) = -(1 - \cos(2 \pi y)) \sin(2 \pi x), \\
 p(x, y) = \frac{x^3}{3} - \frac{1}{12}.$$
 
-We will design a MAC scheme for $u$, $v$, and $p$ on a staggered grid and discretize the original problem using the finite difference method. Approximate the operators directly at internal grid points using the difference formula, discretize at Neumann boundaries using ghost cells, and no equations need to be formulated at enforced boundary conditions.
+We will design a MAC scheme for $u$, $v$, and $p$ on a staggered grid and discretize the original problem using the finite difference method. Approximate the operators directly at internal grid points using the difference formula, discretize at Neumann boundaries using ghost cells, and no equations need to be formulated at enforced boundary conditions. The linear systems are solved by multigrid methods. See the report for more details (the report is written in Chinese).
 
-Acknoledgements: Some pictures in the report are created by Prof. Jun Hu (instructor) and Qingyu Wu (TA).
+
