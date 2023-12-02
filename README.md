@@ -1,13 +1,13 @@
 # Solving the Stokes equation using the MAC scheme and multigrid methods
 ## Final project @ Numerical Linear Algebra (数值代数) at Peking University. 
 Consider the Stokes equations:
-$$-\Delta \vec{u} + \nabla p  = \vec{F},  (x, y) \in (0,1) \times (0,1), \\
-\text{div} \vec{u}  = 0,  (x, y) \in (0,1) \times (0,1).$$
+$$-\Delta \vec{u} + \nabla p  = \vec{F},  (x, y) \in (0,1) \times (0,1),$$
+$$\text{div} \vec{u}  = 0,  (x, y) \in (0,1) \times (0,1).$$
 
 The boundary conditions are:
-$$\frac{\partial u}{\partial \vec{n}} = b, \quad y = 0, \quad \frac{\partial u}{\partial \vec{n}} = t, \quad y = 1, \\
-\frac{\partial v}{\partial \vec{n}} = l, \quad x = 0, \quad \frac{\partial v}{\partial \vec{n}} = r, \quad x = 1, \\
-u = 0, \quad x = 0, 1, \quad v = 0, \quad y = 0, 1.$$
+$$\frac{\partial u}{\partial \vec{n}} = b, \quad y = 0, \quad \frac{\partial u}{\partial \vec{n}} = t, \quad y = 1,$$
+$$\frac{\partial v}{\partial \vec{n}} = l, \quad x = 0, \quad \frac{\partial v}{\partial \vec{n}} = r, \quad x = 1,$$
+$$u = 0, \quad x = 0, 1, \quad v = 0, \quad y = 0, 1.$$
 
 Here, $\vec{u} = (u, v)$ represents the velocity, $p$ the pressure, $\vec{F} = (f, g)$ the external force, and $\vec{n}$ the outward normal direction.
 In the domain $\Omega = (0,1) \times (0,1)$, the external force is:
