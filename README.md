@@ -1,8 +1,8 @@
 # Solving the Stokes equation using the MAC scheme and multigrid methods
 ## Final project @ Numerical Linear Algebra (数值代数) at Peking University. 
 Consider the Stokes equations:
-$$-\Delta \vec{u} + \nabla p & = \vec{F}, & (x, y) \in (0,1) \times (0,1), \\
-\text{div} \vec{u} & = 0, & (x, y) \in (0,1) \times (0,1).$$
+$$-\Delta \vec{u} + \nabla p  = \vec{F},  (x, y) \in (0,1) \times (0,1), \\
+\text{div} \vec{u}  = 0,  (x, y) \in (0,1) \times (0,1).$$
 
 The boundary conditions are:
 $$\frac{\partial u}{\partial \vec{n}} = b, \quad y = 0, \quad \frac{\partial u}{\partial \vec{n}} = t, \quad y = 1, \\
